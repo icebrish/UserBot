@@ -49,4 +49,3 @@ CMD_HELP.update({CMD_HELP.update({
         ".scan"
         "\nUsage:check files for virus🦠\n"
     })
-	
