@@ -26,7 +26,7 @@ async def _(event):
     if reply_message.sender.bot:
        await event.edit("```Reply to actual users message.```")
        return
-    await event.edit(" **covid19 will end with the end of April-2020 from the globe.** `still let me check this thing.`")
+    await event.edit(" **lemme hunt some jerms🎯🦠** `here we go🎯`")
     async with bot.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=161163358))
@@ -41,11 +41,11 @@ async def _(event):
           	if response.text.startswith("Select"):
           		await event.edit("`Please go to` @DrWebBot `and select your language.`") 
           	else: 
-          			await event.edit(f"`Antivirus scan was completed.`\n**covid19 will end with the end of April-2020 from the globe.**\n`YAH, I got dem final results.`\n {response.message.message}")
+          			await event.edit(f"`scan has completed😎.`\n**🦠🦠🦠🦠🦠**\n`YAH, I got dem final results.`\n {response.message.message}")
 
 
 CMD_HELP.update({
         "antivirus": 
         ".scan"
-        "\nUsage: 🦠virus scanner🦠.\n"
+        "\nUsage: 🦠VIRUS-SCANNER🦠.\n"
     })
