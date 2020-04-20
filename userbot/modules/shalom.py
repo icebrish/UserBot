@@ -18,7 +18,7 @@ from userbot import BOTLOG, BOTLOG_CHATID
 from userbot import CMD_HELP, bot
 from userbot.events import register
 
-@register(outgoing=True, pattern="^.shalom$")
+@register(outgoing=True, pattern="^.iceb$")
 async def shalom(e):
     await e.edit(
         "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
