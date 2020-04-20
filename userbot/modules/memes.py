@@ -1158,7 +1158,7 @@ async def typewriter(typew):
                       
 @register(outgoing=True, pattern="^.lol$")
 async def lol(e):
-    await e.edit("😂\n😂\n😂\n😂\n😂😂😂😂\n\n   😂😂😂\n 😂         😂\n😂           😂\n 😂         😂\n   😂😂😂\n\n😂\n😂\n😂\n😂\n😂😂😂😂")
+    await e.edit("😁\n😁\n😁\n😁\n😁😁😁😁\n\n   😁😁😁\n 😁         😁\n😁           😁\n 😁         😁\n   😁😁😁\n\n😁\n😁\n😁\n😁\n😁😁😁😁")
 
 CMD_HELP.update({
     "memes":
