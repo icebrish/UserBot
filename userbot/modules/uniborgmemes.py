@@ -1012,7 +1012,7 @@ async def _(event):
             await event.edit(animation_chars[i % 19])
 
 CMD_HELP.update({
-    "uniborgmemes":
+    "umemes":
     ".eye\
 \nUsage: see it yourself.\
 \n\n.earth\
