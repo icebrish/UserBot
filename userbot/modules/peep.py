@@ -19,7 +19,7 @@ async def _(event):
 
     animation_interval = 3
 
-    animation_ttl = range(0, 50)
+    animation_ttl = range(0, 103)
 
     input_str = event.pattern_match.group(1)
 
@@ -41,14 +41,14 @@ async def _(event):
             "\n You see me doin' shows now, I'm a pro now \n I got hoes now and I got some dough now",
             "\n But they don't wanna hear that, they want that real shit \n They want that drug talk, that \"I can't feel shit\"",
             "\n I'm never comin' home now, all alone now \n Can't let my bros down, can't let my bros down",
-            "\n I feel like I'm a no one, that's what they told me \n I'ma show ya, baby, I was chosen, ayy",
+            "\n I feel like I'm a no one, that's what they told me \n I'ma show ya, baby, I was chosen, ayy"
         ]
 
         for i in animation_ttl:
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 10])
+            await event.edit(animation_chars[i % 103])
 CMD_HELP.update({
         "peep": 
         ".peep"
