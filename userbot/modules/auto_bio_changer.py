@@ -6,7 +6,7 @@ import asyncio
 import time
 from telethon.tl import functions
 from telethon.errors import FloodWaitError
-from uniborg.util import admin_cmd
+from userbot import CMD_HELP
 
 
 DEL_TIME_OUT = 70
@@ -35,4 +35,9 @@ async def _(event):
             #     "Changed Profile Picture"
             # )
         await asyncio.sleep(DEL_TIME_OUT)
+CMD_HELP.update({
+        "autobio": 
+        ".autobio"
+        "\nauto bio.\n"
+    })        
 
