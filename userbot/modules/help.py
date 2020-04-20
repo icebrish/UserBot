@@ -26,7 +26,3 @@ async def help(event):
             string += "`" + str(i)
             string += "`  ||  "
         await event.reply(string)
-
-
-
-
