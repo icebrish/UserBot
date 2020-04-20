@@ -1,4 +1,4 @@
-"""COMMAND : .eye"""
+"""COMMAND : .peep"""
 
 from telethon import events
 
