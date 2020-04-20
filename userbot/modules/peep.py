@@ -17,9 +17,9 @@ async def _(event):
 
         return
 
-    animation_interval = 2
+    animation_interval = 3
 
-    animation_ttl = range(0, 40)
+    animation_ttl = range(0, 50)
 
     input_str = event.pattern_match.group(1)
 
@@ -39,9 +39,9 @@ async def _(event):
             "\n Yeah, I'm in my zone now, I put my phone down \n I'm on my own now, I'm on my own now",
             "\n Ya girl, she wanna go down on a real one \n I hit JGRXXN, like \"What's the deal bruh?\"",    
             "\n You see me doin' shows now, I'm a pro now \n I got hoes now and I got some dough now",
-            "\n But they don't wanna hear that, they want that real shit \n They want that drug talk, that \"I can't feel shit\""
-            "\n I'm never comin' home now, all alone now \n Can't let my bros down, can't let my bros down"
-            "\n I feel like I'm a no one, that's what they told me \n I'ma show ya, baby, I was chosen, ayy"
+            "\n But they don't wanna hear that, they want that real shit \n They want that drug talk, that \"I can't feel shit\"",
+            "\n I'm never comin' home now, all alone now \n Can't let my bros down, can't let my bros down",
+            "\n I feel like I'm a no one, that's what they told me \n I'ma show ya, baby, I was chosen, ayy",
         ]
 
         for i in animation_ttl:
