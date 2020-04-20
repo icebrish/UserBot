@@ -41,11 +41,12 @@ async def _(event):
           	if response.text.startswith("Select"):
           		await event.edit("`Please go to` @DrWebBot `and select your language.`") 
           	else: 
-          			await event.edit(f"`Antivirus scan was completed.`\n**covid19 will end with the end of April-2020 from the globe.**\n`YAH, I got dem final results.`\n {response.message.message}")
+          			await event.edit(f"`🦠Antivirus scan was completed🦠.`\n**🦠🦠🦠🦠🦠🦠.**\n`YAH, I got dem final results.`\n {response.message.message}")
 
 
-CMD_HELP.update({
-"Antivirus": ".scan\
-    \nUsage: Type .scan to scan and remove virus"
-})
-
+CMD_HELP.update({CMD_HELP.update({
+        "antivirus": 
+        ".scan"
+        "\nUsage:check files for virus🦠\n"
+    })
+	
