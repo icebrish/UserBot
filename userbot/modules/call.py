@@ -57,6 +57,6 @@ async def _(event):
 CMD_HELP.update({
         "call": 
         ".call"
-        "\nUsage: make a call with Pavel Durov.\n"
+        "\nUsage: make a call with Pavel Durov😝\n"
     })            
             
