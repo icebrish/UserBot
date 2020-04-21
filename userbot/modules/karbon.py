@@ -386,7 +386,7 @@ async def carbon_api(e):
  
     
 CMD_HELP.update({
-    'karbon1':
+    'karbon':
     '.karbon1 <text> [or reply]\
         \nUsage: Beautify your text'
 })
@@ -413,4 +413,18 @@ CMD_HELP.update({
     'karbon5':
     '.karbon5 <text> [or reply]\
         \nUsage: Beautify your text.'
+})
+
+CMD_HELP.update({
+    "karbon": 
+     ".karbon1\
+\nUsage: Beautify your text.\
+\n\n.karbon2\
+\nUsage: Beautify your text.\
+\n\n.karbon3\
+\nUsage: Beautify your text.\
+\n\n.karbon4\
+\nUsage: Beautify your text.\
+\n\n.karbon5\
+\nUsage: Beautify your text."
 })
