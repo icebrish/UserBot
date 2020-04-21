@@ -32,13 +32,13 @@ async def _(event):
             "`Connecting To Telegram Headquarters...`",
             "`Call Connected.`",
             "`Telegram: Hello This is Telegram HQ. Who is this?`",
-            f"`Me: Yo this is` {DEFAULTUSER} ,`Please Connect me to my lil bro,Pavel Durov`",
+            f"`Me: Yo this is`  {DEFAULTUSER} ,`Please Connect me to my lil bro,Pavel Durov`",
             "`User Authorised.`",
             "`Calling Pavel Durov`  `At +916969696969`",
             "`Private  Call Connected...`",
             "`Me: Hello Sir, Please Ban This Telegram Account.`",    
             "`Pavel: May I Know Who Is This?`",
-            f"`Me: Yo Brah, I Am` {DEFAULTUSER} ",
+            f"`Me: Yo Brah, I Am`  {DEFAULTUSER} ",
             "`Pavel: OMG!!! Long time no see, Wassup Brother...\nI'll Make Sure That Guy Account Will Get Blocked Within 24Hrs.`",
             "`Me: Thanks, See You Later Brah.`",
             "`Pavel: Please Don't Thank Brah, Telegram Is Our's. Just Gimme A Call When You Become Free.`",
@@ -54,4 +54,9 @@ async def _(event):
             await asyncio.sleep(animation_interval)
 
             await event.edit(animation_chars[i % 18])
+CMD_HELP.update({
+        "call": 
+        ".call"
+        "\nUsage: make a call with Pavel Durov.\n"
+    })            
             
