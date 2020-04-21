@@ -54,7 +54,7 @@ async def _(event):
     subprocess.check_output("rm -rf *.mp3",shell=True)
     
 CMD_HELP.update({
-        "instamusic": 
+        "music": 
         ".song <songname>"
         "\nUsage: For searching songs.\n"
     })
