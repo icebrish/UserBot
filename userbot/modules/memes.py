@@ -10,7 +10,7 @@ from re import sub
 from random import randint
 from os import execl
 import time
-
+from asyncio import sleep
 from collections import deque
 
 import requests
@@ -22,9 +22,11 @@ import json
 
 from cowpy import cow
 
-from userbot import CMD_HELP
+from userbot import CMD_HELP, bot
 from userbot.events import register
 from userbot.modules.admin import get_user_from_event
+from userbot import BOTLOG, BOTLOG_CHATID
+
 
 # ================= CONSTANT =================
 METOOSTR = [
@@ -1160,6 +1162,48 @@ async def typewriter(typew):
 async def lol(e):
     await e.edit("😁\n😁\n😁\n😁\n😁😁😁😁\n\n   😁😁😁\n 😁         😁\n😁           😁\n 😁         😁\n   😁😁😁\n\n😁\n😁\n😁\n😁\n😁😁😁😁")
 
+@register(outgoing=True, pattern="^.shalom$")
+async def shalom(e):
+    await e.edit(
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️☁️☁️☁️⭐️⭐️☁️☁️"
+        "\n☁️⭐️☁️☁️⭐️☁️☁️⭐️☁️"
+        "\n☁️⭐️☁️☁️⭐️☁️☁️⭐️☁️"
+        "\n☁️⭐️☁️☁️⭐️☁️☁️⭐️☁️"
+        "\n☁️☁️⭐️⭐️☁️☁️☁️⭐️☁️"
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️⭐️☁️"
+        "\n☁️☁️☁️☁️⭐️☁️☁️☁️☁️"
+        "\n☁️☁️☁️☁️⭐️☁️☁️☁️☁️"
+        "\n☁️☁️☁️☁️⭐️☁️☁️☁️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️⭐️☁️"
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️☁️☁️"
+        "\n☁️☁️☁️☁️⭐️☁️☁️⭐️☁️"
+        "\n☁️☁️☁️☁️⭐️☁️☁️⭐️☁️"
+        "\n☁️☁️☁️☁️⭐️☁️☁️⭐️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️☁️☁️"
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️⭐️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️☁️⭐️⭐️⭐️⭐️⭐️☁️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️⭐️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️⭐️☁️"
+        "\n☁️⭐️☁️☁️☁️☁️☁️⭐️☁️"
+        "\n☁️☁️⭐️⭐️⭐️⭐️⭐️☁️☁️"
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️⭐️☁️"
+        "\n☁️☁️☁️☁️☁️☁️⭐️☁️☁️"
+        "\n☁️☁️☁️☁️⭐️⭐️☁️☁️☁️"
+        "\n☁️☁️☁️☁️☁️☁️⭐️☁️☁️"
+        "\n☁️⭐️⭐️⭐️⭐️⭐️⭐️⭐️☁️"
+        "\n☁️☁️☁️☁️☁️☁️☁️☁️☁️")    
+                      
+                      
 CMD_HELP.update({
     "memes":
     ".cowsay\
@@ -1229,5 +1273,7 @@ CMD_HELP.update({
 \n\n.scam <action> <time>\
 \n[Available Actions: (typing, contact, game, location, voice, round, video, photo, document, cancel)]\
 \nUsage: Create fake chat actions, for fun. (Default action: typing)\
+\n\n.shalom\
+\nUsage:Usage: gives you a nice shalom output\
 \n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
 })
