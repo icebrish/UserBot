@@ -1,4 +1,4 @@
-""" Spotify / Deezer downloader plugin by @anubisxx | Syntax: .sdd link"""
+""" Spotify / Deezer downloader plugin by @anubisxx | Syntax: .dzr link"""
 import datetime
 import asyncio
 from telethon import events
@@ -9,7 +9,7 @@ from telethon.tl.functions.messages import ImportChatInviteRequest
 from userbot.events import register 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot, ALIVE_NAME
 
-@register(outgoing=True, pattern="^.sdd(?: |$)(.*)")
+@register(outgoing=True, pattern="^.dzr(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -37,3 +37,8 @@ async def _(event):
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
+CMD_HELP.update({
+        "deezer": 
+        ".dzr <link>"
+        "\nUsage: Deezer downloader.\n"
+    })                
