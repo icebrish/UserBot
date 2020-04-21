@@ -33,7 +33,7 @@ async def is_off_br(br):
     return
 
 
-@register(outgoing=True, pattern="^.chl(?: |$)(.*)")
+@register(outgoing=True, pattern="^.chk(?: |$)(.*)")
 async def chtream(ch):
     "For .update command, check if the bot is up to date, update if specified"
     await ch.edit("`Checking for updates, please wait....`")
@@ -113,8 +113,8 @@ async def chtream(ch):
 
 
 CMD_HELP.update({
-    'update':
-    ".chl\
+    'update1':
+    ".chk\
 \nUsage: Checks if the main userbot repository has any updates and shows a changelog if so.\
 \n\n.update\
 \nUsage: Updates your userbot, if there are any updates in the main userbot repository."
