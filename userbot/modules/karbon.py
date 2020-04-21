@@ -381,40 +381,6 @@ async def carbon_api(e):
     # Removing carbon.png after uploading
     await e.delete()  # Deleting msg
     
-
-
- 
-    
-CMD_HELP.update({
-    'karbon':
-    '.karbon1 <text> [or reply]\
-        \nUsage: Beautify your text'
-})
-
-    
-CMD_HELP.update({
-    'karbon2':
-    '.karbon2 <text> [or reply]\
-        \nUsage: Beautify your TXT.'
-})
-
-    
-CMD_HELP.update({
-    'karbon3':
-    '.karbon3 <text> [or reply]\
-        \nUsage: Beautify your text.'
-})
-CMD_HELP.update({
-    'karbon4':
-    '.karbon4 <text> [or reply]\
-        \nUsage: Beautify your text.'
-})
-CMD_HELP.update({
-    'karbon5':
-    '.karbon5 <text> [or reply]\
-        \nUsage: Beautify your text.'
-})
-
 CMD_HELP.update({
     "karbon": 
      ".karbon1\
