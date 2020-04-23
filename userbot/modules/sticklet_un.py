@@ -83,5 +83,5 @@ async def get_font_file(client, channel_id):
     
 CMD_HELP.update({
 "sticker": ".un\
-    \nUsage: Type .un text and generate rgb sticker. "
+    \nUsage: Type .un text and generate rgb sticker right away. "
 })    
